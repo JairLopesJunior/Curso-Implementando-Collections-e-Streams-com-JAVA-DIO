@@ -2,13 +2,12 @@ package br.com.digitalinovationone.collectionsestreamscomjava.list;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.Set;
 
 public class LinkedHashSetJava {
 
 	public static void main(String[] args) {
 		
-		Set<Integer> sequenciaNumerica = new LinkedHashSet<>();
+		LinkedHashSet<Integer> sequenciaNumerica = new LinkedHashSet<>();
 		
 		sequenciaNumerica.add(1);
 		sequenciaNumerica.add(2);
