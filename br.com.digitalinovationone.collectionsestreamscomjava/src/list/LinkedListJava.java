@@ -1,4 +1,4 @@
-package br.com.digitalinovationone.collectionsestreamscomjava.list;
+package list;
 
 import java.util.Iterator;
 import java.util.LinkedList;
