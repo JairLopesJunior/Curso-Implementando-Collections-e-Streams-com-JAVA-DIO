@@ -2,6 +2,7 @@ package streams;
 
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -39,6 +40,15 @@ public class TreinandoStreams {
 		// Retornar a Fila tudo em Maiuscula
 		System.out.println("Fila Maiuscula: " + nomes.stream().map(n -> 
 			n.toUpperCase()).collect(Collectors.toList()));
+		
+		// Retornando Stream encadeado
+		List<String> nomesConvertido = nomes
+			.stream()
+			.filter(n -> n.contains("a"))
+			.sorted(Comparator.comparingInt(String::length))
+			.limit(3)
+			.collect(Collectors.toList());
+		System.out.println(nomesConvertido);
 	}
 
 }
